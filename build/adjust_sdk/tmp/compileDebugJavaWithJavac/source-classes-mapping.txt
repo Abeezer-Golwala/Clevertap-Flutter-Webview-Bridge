@@ -1,0 +1,13 @@
+com/adjust/sdk/flutter/AdjustSdk.java
+ com.adjust.sdk.flutter.AdjustSdk
+ com.adjust.sdk.flutter.AdjustSdk$1
+ com.adjust.sdk.flutter.AdjustSdk$2
+ com.adjust.sdk.flutter.AdjustSdk$3
+ com.adjust.sdk.flutter.AdjustSdk$4
+ com.adjust.sdk.flutter.AdjustSdk$5
+ com.adjust.sdk.flutter.AdjustSdk$6
+ com.adjust.sdk.flutter.AdjustSdk$7
+com/adjust/sdk/flutter/BuildConfig.java
+ com.adjust.sdk.flutter.BuildConfig
+com/adjust/sdk/flutter/AdjustUtils.java
+ com.adjust.sdk.flutter.AdjustUtils

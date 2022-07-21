@@ -1,0 +1,8 @@
+com/clevertap/clevertap_plugin/CleverTapPlugin.java
+ com.clevertap.clevertap_plugin.CleverTapPlugin
+ com.clevertap.clevertap_plugin.CleverTapPlugin$1
+ com.clevertap.clevertap_plugin.CleverTapPlugin$1$1
+com/clevertap/clevertap_plugin/Utils.java
+ com.clevertap.clevertap_plugin.Utils
+com/clevertap/clevertap_plugin/BuildConfig.java
+ com.clevertap.clevertap_plugin.BuildConfig
