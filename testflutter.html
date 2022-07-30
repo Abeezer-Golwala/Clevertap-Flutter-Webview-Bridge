@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Test Web CleverTap</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		    const d = new Date(2022, 6, 24);
+		    console.log(d);
+			function flutterevent(){
+                // messageHandler.postMessage(JSON.stringify({Type:"event",EventName : 'Product Viewed', Payload: {'Product Name': 'Dairy Milk','Category': 'Chocolate','Amount': 20.00,DateViewed:d}}));
+                messageHandler.postMessage(JSON.stringify({Type:"event",EventName : 'Product Viewed'}));
+			}
+			function flutterlogin(){
+			    messageHandler.postMessage(JSON.stringify({Type:"onuserlogin",Payload:{'Name': 'Abctest', 'Identity': '5559', 'Email' : 'h2@flutter.com', 'MSG-push':true, 'MSG-email':true,'MSG-sms':true, 'MSG-whatsapp':true}}));
+
+			}
+			function flutterpushprofile(){
+			    messageHandler.postMessage(JSON.stringify({Type:"profileset",Payload:{'Gender': 'Male','test':'hello','test2':["hello","helloe"]}}));
+
+			}
+			function chargedEvent(){
+			    messageHandler.postMessage(JSON.stringify({Type:"chargedevent",chargedetails:{'totalValue': 20, 'category': 'books'},items:[{'title': 'book1'}, {'title': 'book2'}, {'title': 'book3'}]}));
+			}
+			function profileSetMultiValuesForKey(){
+			    messageHandler.postMessage(JSON.stringify({Type:"profileSetMultiValuesForKey",values:['a','b','c'],key:'letters'}));
+			}
+			function profileRemoveMultiValueForKey(){
+			    messageHandler.postMessage(JSON.stringify({Type:"profileRemoveMultiValuesForKey",values:['b','c'],key:'letters'}));
+			}
+			function profileAddMultiValueForKey(){
+			    messageHandler.postMessage(JSON.stringify({Type:"profileAddMultiValuesForKey",values:['d','e'],key:'letters'}));
+			}
+		</script>
+		<form>  
+ 		 <input type = "button" onclick = "flutterlogin()" value = "Push Login to flutter" style="height:250px;font-size: 60px;"><br><br>
+   		 <input type = "button" onclick = "flutterpushprofile()" value = "Push profile to flutter" style="height:250px;font-size: 60px;"><br><br>
+	    <input type = "button" onclick = "flutterevent()" value = "Push Event to flutter" style="height:250px;font-size: 60px;"><br><br>
+	    <input type = "button" onclick = "chargedEvent()" value = "Push Charged Event to flutter" style="height:250px;font-size: 60px;"><br><br>
+	    <input type = "button" onclick = "profileRemoveMultiValueForKey()" value = "Remove value from Key to flutter" style="height:250px;font-size: 60px;"><br><br>
+	    <input type = "button" onclick = "profileAddMultiValueForKey()" value = "Add Value to a Key to flutter" style="height:250px;font-size: 60px;"><br><br>
+	    <input type = "button" onclick = "profileSetMultiValuesForKey()" value = "Set MultiValues For Key to flutter" style="height:250px;font-size: 60px;"><br><br>
+      </form>
+	</body>
